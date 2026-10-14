@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "studentspex/section",
+	"title": "Sektion",
+	"category": "studentspex",
+	"icon": "align-wide",
+	"description": "Sektion med bakgrund (grädde, vit, marin eller ridå med diamantmönster).",
+	"textdomain": "studentspex",
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"default": "cream"
+		},
+		"width": {
+			"type": "string",
+			"default": "wide"
+		},
+		"tight": {
+			"type": "boolean",
+			"default": false
+		},
+		"spotlights": {
+			"type": "string",
+			"default": "none"
+		},
+		"scallop": {
+			"type": "boolean",
+			"default": false
+		},
+		"scallopColor": {
+			"type": "string",
+			"default": "cream"
+		},
+		"padTop": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

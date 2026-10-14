@@ -1,6 +1,21 @@
 # Wordpress - ignore core, configuration, examples, uploads and logs.
 # https://github.com/github/gitignore/blob/main/WordPress.gitignore
 
+# Dependencies and build output
+node_modules/
+theme/build/
+dist/
+
+# Local dev logs (WordPress Playground mu-plugins write these)
+dev/mu-plugins/*.log
+
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/
+
 # Core
 #
 # Note: if you want to stage/commit WP core files

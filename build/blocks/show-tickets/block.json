@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/show-tickets",
+  "title": "Biljetter (aktuell uppsättning)",
+  "category": "studentspex",
+  "icon": "tickets-alt",
+  "description": "Priser och biljettknapp.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "buttonText": {
+      "type": "string",
+      "default": "Köp biljetter"
+    },
+    "fallbackTitle": {
+      "type": "string",
+      "default": "Biljettsläpp snart"
+    },
+    "fallbackText": {
+      "type": "string",
+      "default": "Vi säljer via Biljettkiosken – du skickas vidare dit när du klickar."
+    },
+    "newsletterText": {
+      "type": "string",
+      "default": "Prenumerera på nyhetsbrevet."
+    },
+    "newsletterUrl": {
+      "type": "string",
+      "default": "#nyhetsbrev"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

@@ -1,0 +1,46 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/newsletter",
+  "title": "Nyhetsbrev",
+  "category": "studentspex",
+  "icon": "email",
+  "description": "Prenumerationsformulär med dubbel bekräftelse.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "variant": {
+      "type": "string",
+      "default": "card"
+    },
+    "eyebrow": {
+      "type": "string",
+      "default": "Nyhetsbrev"
+    },
+    "title": {
+      "type": "string",
+      "default": "Få ett mejl när vi annonserar nästa spex"
+    },
+    "lead": {
+      "type": "string",
+      "default": "Titel, premiärdatum och biljettsläpp – direkt i inkorgen innan de bästa platserna går."
+    },
+    "promise": {
+      "type": "string",
+      "default": "Vi mejlar bara när det finns ett nytt spex att berätta om. En gång (kanske två) om året, aldrig mer."
+    },
+    "consent": {
+      "type": "string",
+      "default": "Ja, mejla mig när ett nytt spex annonseras. Vi använder adressen bara till det här utskicket, delar den aldrig och du kan avregistrera dig med en länk i varje mejl."
+    },
+    "buttonText": {
+      "type": "string",
+      "default": "Prenumerera"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

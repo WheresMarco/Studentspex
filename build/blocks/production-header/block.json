@@ -1,0 +1,21 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/production-header",
+  "title": "Uppsättningens sidhuvud",
+  "category": "studentspex",
+  "icon": "tickets-alt",
+  "description": "Används i mallen för en enskild uppsättning.",
+  "textdomain": "studentspex",
+  "usesContext": [
+    "postId",
+    "postType"
+  ],
+  "attributes": {},
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

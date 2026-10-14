@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/show-plot",
+  "title": "Handlingen (aktuell uppsättning)",
+  "category": "studentspex",
+  "icon": "book-alt",
+  "description": "Handling och affisch från aktuell uppsättning.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": "Handlingen i korthet"
+    },
+    "title": {
+      "type": "string",
+      "default": "Vad händer på scen?"
+    },
+    "outro": {
+      "type": "string",
+      "default": "Som alltid: egenskrivna texter till låtar du känner igen, en liveorkester i diket och en ensemble som gör precis vad publiken ropar. <strong>Ingen föreställning är den andra lik.</strong>"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

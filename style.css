@@ -1,0 +1,16 @@
+/*
+Theme Name: Studentspex
+Theme URI: https://www.studentspex.se/
+Author: Linköpings Studentspex
+Description: Block theme for Linköpings Studentspex – stage blues, harlequin curtains and Lisse Spexlund. Every page section is an editable block; productions are managed as "Uppsättningar" and the newsletter is built in.
+Version: 1.0.0
+Requires at least: 6.6
+Tested up to: 7.1
+Requires PHP: 7.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: studentspex
+Tags: block-patterns, full-site-editing, custom-colors, editor-style, translation-ready
+*/
+
+/* Styles live in assets/css/style.css (enqueued by functions.php, also loaded in the editor). */

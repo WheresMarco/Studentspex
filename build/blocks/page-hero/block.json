@@ -1,0 +1,58 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/page-hero",
+  "title": "Sidhuvud (scen)",
+  "category": "studentspex",
+  "icon": "cover-image",
+  "description": "Mörk sidtopp med diamantmönster, rubrik, ingress och valfri bild.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "lead": {
+      "type": "string",
+      "default": ""
+    },
+    "source": {
+      "type": "string",
+      "default": "custom"
+    },
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "imageWide": {
+      "type": "boolean",
+      "default": true
+    },
+    "spotlights": {
+      "type": "string",
+      "default": "right"
+    },
+    "scallopColor": {
+      "type": "string",
+      "default": "cream"
+    },
+    "level": {
+      "type": "number",
+      "default": 1
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

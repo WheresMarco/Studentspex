@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/site-header",
+  "title": "Sidhuvud med meny",
+  "category": "studentspex",
+  "icon": "menu",
+  "description": "Logotyp, meny och knapp. Byt logotyp under Utseende → Redigerare → Stilar eller Webbplatsens logotyp.",
+  "textdomain": "studentspex",
+  "attributes": {},
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

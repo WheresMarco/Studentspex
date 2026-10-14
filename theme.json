@@ -1,0 +1,279 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"useRootPaddingAwareAlignments": false,
+		"color": {
+			"defaultPalette": false,
+			"defaultGradients": false,
+			"defaultDuotone": false,
+			"custom": true,
+			"palette": [
+				{
+					"slug": "ink",
+					"name": "Bläck",
+					"color": "#081230"
+				},
+				{
+					"slug": "navy",
+					"name": "Marin",
+					"color": "#0e1f52"
+				},
+				{
+					"slug": "navy-2",
+					"name": "Marin ljus",
+					"color": "#16307a"
+				},
+				{
+					"slug": "royal",
+					"name": "Kungsblå",
+					"color": "#2653d9"
+				},
+				{
+					"slug": "sky",
+					"name": "Himmel",
+					"color": "#8cc4ff"
+				},
+				{
+					"slug": "ice",
+					"name": "Is",
+					"color": "#dcecff"
+				},
+				{
+					"slug": "gold",
+					"name": "Guld",
+					"color": "#ffc94a"
+				},
+				{
+					"slug": "gold-deep",
+					"name": "Mörkt guld",
+					"color": "#e9a515"
+				},
+				{
+					"slug": "cream",
+					"name": "Grädde",
+					"color": "#fbf6ec"
+				},
+				{
+					"slug": "paper",
+					"name": "Papper",
+					"color": "#ffffff"
+				},
+				{
+					"slug": "text",
+					"name": "Text",
+					"color": "#0d1633"
+				},
+				{
+					"slug": "text-soft",
+					"name": "Text dämpad",
+					"color": "#46527a"
+				}
+			]
+		},
+		"typography": {
+			"defaultFontSizes": false,
+			"fluid": true,
+			"fontFamilies": [
+				{
+					"slug": "display",
+					"name": "Fraunces",
+					"fontFamily": "Fraunces, Georgia, serif",
+					"fontFace": [
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "normal",
+							"fontWeight": "500 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces-normal-latin.woff2"
+							]
+						},
+						{
+							"fontFamily": "Fraunces",
+							"fontStyle": "italic",
+							"fontWeight": "500 900",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/fraunces-italic-latin.woff2"
+							]
+						}
+					]
+				},
+				{
+					"slug": "body",
+					"name": "Figtree",
+					"fontFamily": "Figtree, system-ui, -apple-system, 'Segoe UI', sans-serif",
+					"fontFace": [
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "normal",
+							"fontWeight": "400 800",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-normal-latin.woff2"
+							]
+						},
+						{
+							"fontFamily": "Figtree",
+							"fontStyle": "italic",
+							"fontWeight": "400 600",
+							"fontDisplay": "swap",
+							"src": [
+								"file:./assets/fonts/figtree-italic-latin.woff2"
+							]
+						}
+					]
+				}
+			],
+			"fontSizes": [
+				{
+					"slug": "xs",
+					"name": "XS",
+					"size": "0.8125rem",
+					"fluid": false
+				},
+				{
+					"slug": "sm",
+					"name": "Liten",
+					"size": "0.9375rem",
+					"fluid": false
+				},
+				{
+					"slug": "md",
+					"name": "Normal",
+					"size": "1.0625rem",
+					"fluid": false
+				},
+				{
+					"slug": "lg",
+					"name": "Stor",
+					"size": "1.25rem",
+					"fluid": false
+				},
+				{
+					"slug": "xl",
+					"name": "XL",
+					"size": "2rem",
+					"fluid": {
+						"min": "1.5rem",
+						"max": "2rem"
+					}
+				},
+				{
+					"slug": "2xl",
+					"name": "2XL",
+					"size": "3.25rem",
+					"fluid": {
+						"min": "2rem",
+						"max": "3.25rem"
+					}
+				},
+				{
+					"slug": "3xl",
+					"name": "3XL",
+					"size": "5.25rem",
+					"fluid": {
+						"min": "2.6rem",
+						"max": "5.25rem"
+					}
+				}
+			]
+		},
+		"layout": {
+			"contentSize": "820px",
+			"wideSize": "1180px"
+		},
+		"spacing": {
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"%",
+				"vw"
+			],
+			"blockGap": null
+		},
+		"custom": {
+			"radius": "22px",
+			"maxw": "1180px"
+		}
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--cream)",
+			"text": "var(--wp--preset--color--text)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--body)",
+			"fontSize": "var(--wp--preset--font-size--md)",
+			"lineHeight": "1.65"
+		},
+		"spacing": {
+			"padding": {
+				"top": "0",
+				"bottom": "0",
+				"left": "0",
+				"right": "0"
+			}
+		},
+		"elements": {
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--royal)"
+				}
+			},
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--display)",
+					"fontWeight": "800",
+					"lineHeight": "1.08"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--3-xl)"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--2-xl)"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--xl)",
+					"fontWeight": "700"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--lg)",
+					"fontWeight": "700"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Sidhuvud",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Sidfot",
+			"area": "footer"
+		}
+	],
+	"customTemplates": [
+		{
+			"name": "page-blocks",
+			"title": "Byggd med block (utan sidrubrik)",
+			"postTypes": [
+				"page"
+			]
+		}
+	]
+}

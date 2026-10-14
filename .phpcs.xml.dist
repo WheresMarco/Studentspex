@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ruleset name="Studentspex">
+	<description>WordPress coding standards for the Studentspex theme.</description>
+	<file>.</file>
+	<exclude-pattern>/node_modules/*</exclude-pattern>
+	<exclude-pattern>/build/*</exclude-pattern>
+	<exclude-pattern>/vendor/*</exclude-pattern>
+	<arg name="extensions" value="php"/>
+	<arg value="sp"/>
+	<config name="testVersion" value="7.4-"/>
+	<config name="minimum_wp_version" value="6.6"/>
+	<rule ref="WordPress-Extra"/>
+	<rule ref="WordPress-Docs"/>
+	<rule ref="PHPCompatibilityWP"/>
+	<rule ref="WordPress.WP.I18n">
+		<properties>
+			<property name="text_domain" type="array"><element value="studentspex"/></property>
+		</properties>
+	</rule>
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals">
+		<properties>
+			<property name="prefixes" type="array"><element value="studentspex"/><element value="spex"/></property>
+		</properties>
+	</rule>
+	<!-- render.php / pattern files receive $attributes, $content, $block from WordPress. -->
+	<rule ref="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedVariableFound">
+		<exclude-pattern>/src/blocks/*/render.php</exclude-pattern>
+		<exclude-pattern>/patterns/*</exclude-pattern>
+	</rule>
+	<rule ref="WordPress.Files.FileName">
+		<exclude-pattern>/src/blocks/*/render.php</exclude-pattern>
+	</rule>
+</ruleset>

@@ -1,0 +1,34 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "studentspex/social",
+	"title": "Sociala medier",
+	"category": "studentspex",
+	"icon": "share",
+	"description": "Instagram, Facebook (och TikTok) – länkarna ställs in under Spexet → Inställningar.",
+	"textdomain": "studentspex",
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"default": "tiles"
+		},
+		"igText": {
+			"type": "string",
+			"default": "Bakom kulisserna, rebusar och biljettsläpp först."
+		},
+		"fbText": {
+			"type": "string",
+			"default": "Evenemang, föreställningsdatum och nyheter."
+		},
+		"ttText": {
+			"type": "string",
+			"default": "Korta klipp från repetitioner och föreställningar."
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

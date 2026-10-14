@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/term",
+  "title": "Ordlista",
+  "category": "studentspex",
+  "icon": "book",
+  "description": "Ord, ordklass och förklaring – t.ex. ett tillrop.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "term": {
+      "type": "string",
+      "default": ""
+    },
+    "kind": {
+      "type": "string",
+      "default": "Tillrop"
+    },
+    "definition": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

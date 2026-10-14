@@ -1,0 +1,33 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "studentspex/shout",
+	"title": "Tillrop (knapp)",
+	"category": "studentspex",
+	"icon": "format-chat",
+	"description": "",
+	"textdomain": "studentspex",
+	"parent": [
+		"studentspex/tillrop"
+	],
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": ""
+		},
+		"icon": {
+			"type": "string",
+			"default": "🎭"
+		},
+		"result": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": false
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

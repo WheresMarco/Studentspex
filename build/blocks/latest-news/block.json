@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/latest-news",
+  "title": "Senaste nyheterna",
+  "category": "studentspex",
+  "icon": "megaphone",
+  "description": "De senaste inläggen som kort.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "count": {
+      "type": "number",
+      "default": 3
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

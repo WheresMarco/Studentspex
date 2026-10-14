@@ -1,0 +1,49 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/card",
+  "title": "Kort",
+  "category": "studentspex",
+  "icon": "index-card",
+  "description": "",
+  "textdomain": "studentspex",
+  "parent": [
+    "studentspex/card-grid"
+  ],
+  "attributes": {
+    "icon": {
+      "type": "string",
+      "default": "✨"
+    },
+    "label": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    },
+    "email": {
+      "type": "string",
+      "default": ""
+    },
+    "variant": {
+      "type": "string",
+      "default": "default"
+    },
+    "hover": {
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

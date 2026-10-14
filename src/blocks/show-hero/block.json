@@ -1,0 +1,66 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "studentspex/show-hero",
+	"title": "Startsidans scen (Nästa spex)",
+	"category": "studentspex",
+	"icon": "tickets-alt",
+	"description": "Stor startsidesbild för aktuell uppsättning. Omslagsbild och Lisse hämtas från uppsättningen.",
+	"textdomain": "studentspex",
+	"attributes": {
+		"kickerText": {
+			"type": "string",
+			"default": ""
+		},
+		"headline": {
+			"type": "string",
+			"default": "Vi ses <em>i februari</em>"
+		},
+		"sub": {
+			"type": "string",
+			"default": "Vi släpper biljetterna i december"
+		},
+		"dateText": {
+			"type": "string",
+			"default": ""
+		},
+		"venueText": {
+			"type": "string",
+			"default": "Forumteatern, Kårhuset Kollektivet"
+		},
+		"btn1Text": {
+			"type": "string",
+			"default": "Biljetter"
+		},
+		"btn1Url": {
+			"type": "string",
+			"default": ""
+		},
+		"showBtn2": {
+			"type": "boolean",
+			"default": true
+		},
+		"btn2Text": {
+			"type": "string",
+			"default": "Sök spexet"
+		},
+		"btn2Url": {
+			"type": "string",
+			"default": ""
+		},
+		"tagTitle": {
+			"type": "string",
+			"default": "Lisse Spexlund"
+		},
+		"tagText": {
+			"type": "string",
+			"default": "maskot sedan urminnes tider"
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

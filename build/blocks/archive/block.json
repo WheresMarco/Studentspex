@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/archive",
+  "title": "Gamla spex (arkiv)",
+  "category": "studentspex",
+  "icon": "archive",
+  "description": "Alla tidigare uppsättningar med sök och årtiondesfilter.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "searchPlaceholder": {
+      "type": "string",
+      "default": "Sök titel, år eller handling…"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

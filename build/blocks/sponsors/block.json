@@ -1,0 +1,22 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/sponsors",
+  "title": "Sponsorer",
+  "category": "studentspex",
+  "icon": "heart",
+  "description": "Tack till – sponsorlogotyper.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "title": {
+      "type": "string",
+      "default": "Tack till"
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

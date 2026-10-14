@@ -1,0 +1,38 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "studentspex/show-dates",
+	"title": "Föreställningar (aktuell uppsättning)",
+	"category": "studentspex",
+	"icon": "calendar-alt",
+	"description": "Datum, plats, tider och gruppbokning.",
+	"textdomain": "studentspex",
+	"attributes": {
+		"datesTitle": {
+			"type": "string",
+			"default": "Datum"
+		},
+		"timesTitle": {
+			"type": "string",
+			"default": "Kiosken öppnar en timme innan"
+		},
+		"timesText": {
+			"type": "string",
+			"default": "Salongen öppnar kvart i. Föreställningen börjar prick."
+		},
+		"groupsTitle": {
+			"type": "string",
+			"default": "Gruppbokning från 10 personer"
+		},
+		"groupsText": {
+			"type": "string",
+			"default": "Företag, förening, sektion eller klass? Mejla"
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

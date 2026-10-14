@@ -1,0 +1,22 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "studentspex/card-grid",
+	"title": "Kortrutnät",
+	"category": "studentspex",
+	"icon": "grid-view",
+	"description": "Rutnät med kort – grupper, kontakter, fördelar…",
+	"textdomain": "studentspex",
+	"attributes": {
+		"columns": {
+			"type": "number",
+			"default": 3
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

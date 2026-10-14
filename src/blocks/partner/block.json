@@ -1,0 +1,42 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "studentspex/partner",
+	"title": "Samarbetspartner",
+	"category": "studentspex",
+	"icon": "networking",
+	"description": "Logotyp och text om en samarbetspartner, t.ex. Lysator som driver hemsidan.",
+	"textdomain": "studentspex",
+	"attributes": {
+		"intro": {
+			"type": "string",
+			"default": "Hemsidan drivs i samarbete med"
+		},
+		"name": {
+			"type": "string",
+			"default": "Datorföreningen Lysator"
+		},
+		"url": {
+			"type": "string",
+			"default": "https://www.lysator.liu.se/inhysningar/"
+		},
+		"imageId": {
+			"type": "number",
+			"default": 0
+		},
+		"imageUrl": {
+			"type": "string",
+			"default": ""
+		},
+		"variant": {
+			"type": "string",
+			"default": "card"
+		}
+	},
+	"supports": {
+		"html": false,
+		"anchor": true
+	},
+	"editorScript": "file:./index.js",
+	"render": "file:./render.php"
+}

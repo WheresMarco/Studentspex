@@ -1,0 +1,28 @@
+<!-- wp:template-part {"slug":"header","tagName":"div","className":"site-header-part"} /-->
+<!-- wp:group {"tagName":"main","layout":{"type":"default"}} -->
+<main class="wp-block-group"><!-- wp:studentspex/page-hero {"eyebrow":"Nyheter","title":"Från kulisserna","lead":"Rebusar, biljettsläpp, uttagningar och allt annat som händer i spexet."} /-->
+
+<!-- wp:studentspex/section -->
+<!-- wp:query {"queryId":1,"query":{"inherit":true,"perPage":9},"className":"news-grid"} -->
+<div class="wp-block-query news-grid"><!-- wp:post-template -->
+<!-- wp:post-featured-image {"isLink":true,"sizeSlug":"medium_large"} /-->
+<!-- wp:post-date /-->
+<!-- wp:post-title {"level":3,"isLink":true} /-->
+<!-- wp:post-excerpt {"moreText":"Läs mer →","excerptLength":24} /-->
+<!-- /wp:post-template -->
+
+<!-- wp:query-pagination -->
+<!-- wp:query-pagination-previous {"label":"Nyare"} /-->
+<!-- wp:query-pagination-numbers /-->
+<!-- wp:query-pagination-next {"label":"Äldre"} /-->
+<!-- /wp:query-pagination -->
+
+<!-- wp:query-no-results -->
+<!-- wp:paragraph -->
+<p>Här finns inget ännu.</p>
+<!-- /wp:paragraph -->
+<!-- /wp:query-no-results --></div>
+<!-- /wp:query -->
+<!-- /wp:studentspex/section --></main>
+<!-- /wp:group -->
+<!-- wp:template-part {"slug":"footer","tagName":"div","className":"site-footer-part"} /-->

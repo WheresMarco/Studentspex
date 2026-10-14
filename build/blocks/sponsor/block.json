@@ -1,0 +1,37 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/sponsor",
+  "title": "Sponsor",
+  "category": "studentspex",
+  "icon": "format-image",
+  "description": "",
+  "textdomain": "studentspex",
+  "parent": [
+    "studentspex/sponsors"
+  ],
+  "attributes": {
+    "imageId": {
+      "type": "number",
+      "default": 0
+    },
+    "imageUrl": {
+      "type": "string",
+      "default": ""
+    },
+    "alt": {
+      "type": "string",
+      "default": ""
+    },
+    "link": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

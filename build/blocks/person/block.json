@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/person",
+  "title": "Person",
+  "category": "studentspex",
+  "icon": "admin-users",
+  "description": "",
+  "textdomain": "studentspex",
+  "parent": [
+    "studentspex/direction"
+  ],
+  "attributes": {
+    "role": {
+      "type": "string",
+      "default": ""
+    },
+    "name": {
+      "type": "string",
+      "default": ""
+    },
+    "email": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

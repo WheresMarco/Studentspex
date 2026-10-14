@@ -1,0 +1,17 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/stats",
+  "title": "Siffror",
+  "category": "studentspex",
+  "icon": "chart-bar",
+  "description": "Rad med stora siffror.",
+  "textdomain": "studentspex",
+  "attributes": {},
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

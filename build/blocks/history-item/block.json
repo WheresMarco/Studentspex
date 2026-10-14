@@ -1,0 +1,33 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/history-item",
+  "title": "Händelse",
+  "category": "studentspex",
+  "icon": "backup",
+  "description": "",
+  "textdomain": "studentspex",
+  "parent": [
+    "studentspex/history"
+  ],
+  "attributes": {
+    "year": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "text": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": false
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}

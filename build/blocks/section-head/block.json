@@ -1,0 +1,38 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "studentspex/section-head",
+  "title": "Sektionsrubrik",
+  "category": "studentspex",
+  "icon": "heading",
+  "description": "Överrubrik, rubrik och ingress. Lägg till knappar så hamnar de till höger.",
+  "textdomain": "studentspex",
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": ""
+    },
+    "title": {
+      "type": "string",
+      "default": ""
+    },
+    "lead": {
+      "type": "string",
+      "default": ""
+    },
+    "align": {
+      "type": "string",
+      "default": "left"
+    },
+    "level": {
+      "type": "number",
+      "default": 2
+    }
+  },
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "editorScript": "file:./index.js",
+  "render": "file:./render.php"
+}
