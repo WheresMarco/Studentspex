@@ -58,7 +58,10 @@ body {
   font-size: var(--fs-md);
   line-height: 1.65;
   color: var(--text);
-  background: var(--cream);
+  /* Ink band at the very top so the frosted header blurs blue, not cream,
+     while it sits over its own spot. Every template opens with a dark stage
+     section, so the band is otherwise hidden. */
+  background: linear-gradient(var(--ink), var(--ink)) top / 100% 160px no-repeat, var(--cream);
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
