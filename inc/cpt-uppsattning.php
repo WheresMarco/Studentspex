@@ -59,6 +59,7 @@ function studentspex_register_uppsattning() {
 		'price_regular',
 		'price_reduced',
 		'price_reduced_note',
+		'price_support',
 		'ticket_title',
 		'ticket_text',
 	);

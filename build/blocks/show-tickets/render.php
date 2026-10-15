@@ -9,18 +9,23 @@
 $show    = studentspex_show( studentspex_current_show_id() );
 $regular = $show ? $show['price_regular'] : '';
 $reduced = $show ? $show['price_reduced'] : '';
+$support = $show ? $show['price_support'] : '';
+$count   = count( array_filter( array( $regular, $reduced, $support ) ) );
 $url     = $show ? $show['ticket_url'] : '';
 $heading = $show && $show['ticket_title'] ? $show['ticket_title'] : $attributes['fallbackTitle'];
 $text    = $show && $show['ticket_text'] ? $show['ticket_text'] : $attributes['fallbackText'];
 ?>
 <div <?php echo studentspex_wrapper( 'tickets', array(), $attributes ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?>>
-	<?php if ( $regular || $reduced ) : ?>
-		<div class="prices reveal">
+	<?php if ( $count ) : ?>
+		<div class="prices<?php echo 3 === $count ? ' prices--3' : ''; ?> reveal">
 			<?php if ( $regular ) : ?>
 				<div class="price price--main"><span class="price__amount"><?php echo esc_html( $regular ); ?><small>kr</small></span><span class="price__who"><?php esc_html_e( 'Ordinarie', 'studentspex' ); ?></span></div>
 			<?php endif; ?>
 			<?php if ( $reduced ) : ?>
 				<div class="price"><span class="price__amount"><?php echo esc_html( $reduced ); ?><small>kr</small></span><span class="price__who"><?php esc_html_e( 'Rabatterat', 'studentspex' ); ?><small><?php echo esc_html( $show['price_reduced_note'] ); ?></small></span></div>
+			<?php endif; ?>
+			<?php if ( $support ) : ?>
+				<div class="price price--support"><span class="price__amount"><?php echo esc_html( $support ); ?><small>kr</small></span><span class="price__who"><?php esc_html_e( 'Robin Hood', 'studentspex' ); ?><small><?php esc_html_e( 'Betala lite extra och stöd spexet', 'studentspex' ); ?></small></span></div>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>

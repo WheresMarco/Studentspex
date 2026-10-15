@@ -306,6 +306,16 @@ function Sidebar() {
 				/>
 				<Text
 					{ ...p }
+					k="price_support"
+					label={ __( 'Robin Hood-pris (kr)', 'studentspex' ) }
+					placeholder="300"
+					help={ __(
+						'Ett högre pris för den som vill stödja spexet. Lämna tomt för att dölja det.',
+						'studentspex'
+					) }
+				/>
+				<Text
+					{ ...p }
 					k="ticket_url"
 					type="url"
 					label={ __( 'Länk till biljettköp', 'studentspex' ) }
