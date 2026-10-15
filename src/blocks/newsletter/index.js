@@ -77,7 +77,7 @@ function Edit( { attributes, setAttributes } ) {
 		<>
 			{ settings }
 			<div { ...blockProps }>
-				<div>
+				<div className="newsletter__head">
 					<Text
 						{ ...p }
 						attr="eyebrow"
@@ -87,21 +87,20 @@ function Edit( { attributes, setAttributes } ) {
 					/>
 					<Text { ...p } attr="title" tag="h2" plain />
 					<Text { ...p } attr="lead" className="lead" />
-					<p className="newsletter__promise">
-						<span aria-hidden="true">✦</span>
-						<Text
-							{ ...p }
-							attr="promise"
-							tag="span"
-							plain
-							placeholder={ __(
-								'Löfte (valfritt)',
-								'studentspex'
-							) }
-						/>
-					</p>
 				</div>
-				<FakeForm p={ p } />
+				<div className="newsletter__form">
+					<FakeForm p={ p } />
+				</div>
+				<p className="newsletter__promise">
+					<span aria-hidden="true">✦</span>
+					<Text
+						{ ...p }
+						attr="promise"
+						tag="span"
+						plain
+						placeholder={ __( 'Löfte (valfritt)', 'studentspex' ) }
+					/>
+				</p>
 			</div>
 		</>
 	);

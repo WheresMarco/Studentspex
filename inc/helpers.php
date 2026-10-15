@@ -122,6 +122,7 @@ function studentspex_show( $id ) {
 		'price_regular'      => (string) $m( 'price_regular' ),
 		'price_reduced'      => (string) $m( 'price_reduced' ),
 		'price_reduced_note' => $m( 'price_reduced_note' ) ? (string) $m( 'price_reduced_note' ) : 'Studerande, pensionär, ung t.o.m. 17 år',
+		'price_support'      => (string) $m( 'price_support' ),
 		'ticket_url'         => (string) $m( 'ticket_url' ),
 		'ticket_title'       => $m( 'ticket_title' ) ? (string) $m( 'ticket_title' ) : '',
 		'ticket_text'        => (string) $m( 'ticket_text' ),

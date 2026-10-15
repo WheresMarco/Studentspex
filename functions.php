@@ -47,12 +47,16 @@ add_action( 'after_setup_theme', 'studentspex_setup' );
  * Front-end assets.
  */
 function studentspex_enqueue_assets() {
-	wp_enqueue_style( 'studentspex', STUDENTSPEX_URI . '/assets/css/style.css', array(), STUDENTSPEX_VERSION );
+	// Version by file time so browsers and page caches pick up CSS/JS changes
+	// without bumping the theme version.
+	$css_ver = filemtime( STUDENTSPEX_DIR . '/assets/css/style.css' );
+	$js_ver  = filemtime( STUDENTSPEX_DIR . '/assets/js/main.js' );
+	wp_enqueue_style( 'studentspex', STUDENTSPEX_URI . '/assets/css/style.css', array(), $css_ver ? (string) $css_ver : STUDENTSPEX_VERSION );
 	wp_enqueue_script(
 		'studentspex',
 		STUDENTSPEX_URI . '/assets/js/main.js',
 		array(),
-		STUDENTSPEX_VERSION,
+		$js_ver ? (string) $js_ver : STUDENTSPEX_VERSION,
 		array(
 			'strategy'  => 'defer',
 			'in_footer' => true,
