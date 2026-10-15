@@ -19,13 +19,26 @@ $text    = $show && $show['ticket_text'] ? $show['ticket_text'] : $attributes['f
 	<?php if ( $count ) : ?>
 		<div class="prices<?php echo 3 === $count ? ' prices--3' : ''; ?> reveal">
 			<?php if ( $regular ) : ?>
-				<div class="price price--main"><span class="price__amount"><?php echo esc_html( $regular ); ?><small>kr</small></span><span class="price__who"><?php esc_html_e( 'Ordinarie', 'studentspex' ); ?></span></div>
+				<div class="price price--main">
+					<span class="price__label"><?php esc_html_e( 'Ordinarie', 'studentspex' ); ?></span>
+					<span class="price__amount"><?php echo esc_html( $regular ); ?><small>kr</small></span>
+					<span class="price__note"><?php esc_html_e( 'Fullt pris', 'studentspex' ); ?></span>
+				</div>
 			<?php endif; ?>
 			<?php if ( $reduced ) : ?>
-				<div class="price"><span class="price__amount"><?php echo esc_html( $reduced ); ?><small>kr</small></span><span class="price__who"><?php esc_html_e( 'Rabatterat', 'studentspex' ); ?><small><?php echo esc_html( $show['price_reduced_note'] ); ?></small></span></div>
+				<div class="price">
+					<span class="price__label"><?php esc_html_e( 'Rabatterat', 'studentspex' ); ?></span>
+					<span class="price__amount"><?php echo esc_html( $reduced ); ?><small>kr</small></span>
+					<span class="price__note"><?php echo esc_html( $show['price_reduced_note'] ); ?></span>
+				</div>
 			<?php endif; ?>
 			<?php if ( $support ) : ?>
-				<div class="price price--support"><span class="price__amount"><?php echo esc_html( $support ); ?><small>kr</small></span><span class="price__who"><?php esc_html_e( 'Robin Hood', 'studentspex' ); ?><small><?php esc_html_e( 'Betala lite extra och stöd spexet', 'studentspex' ); ?></small></span></div>
+				<div class="price price--support">
+					<span class="price__badge"><?php esc_html_e( 'Stöd spexet', 'studentspex' ); ?></span>
+					<span class="price__label"><?php esc_html_e( 'Robin Hood', 'studentspex' ); ?></span>
+					<span class="price__amount"><?php echo esc_html( $support ); ?><small>kr</small></span>
+					<span class="price__note"><?php esc_html_e( 'Betala lite extra så går mellanskillnaden till spexet.', 'studentspex' ); ?></span>
+				</div>
 			<?php endif; ?>
 		</div>
 	<?php endif; ?>
